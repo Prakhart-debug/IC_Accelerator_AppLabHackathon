@@ -40,7 +40,7 @@ import Messages from "./pages/Messages";
 import TasksKanban from "./pages/tasks/TasksKanban";
 import TasksList from "./pages/tasks/TasksList";
 import Inbox from "./pages/Inbox";
-import Calendar from "./pages/Calendar";
+//import Calendar from "./pages/Calendar";
 import Account from "./pages/settings/Account";
 import Notifications from "./pages/settings/Notifications";
 import Apps from "./pages/settings/Apps";
@@ -283,14 +283,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
-            path="/calendar"
-            element={
-              <ProtectedRoute>
-                <Calendar />
-              </ProtectedRoute>
-            }
-          />
+//           <Route
+//             path="/calendar"
+//             element={
+//               <ProtectedRoute>
+//                 <Calendar />
+//               </ProtectedRoute>
+//             }
+//           />
           <Route
             path="/settings/account"
             element={
@@ -450,7 +450,7 @@ function App() {
             element={
               <ProtectedRoute>
                 <ButtonPage />
-              </ProtectedRoute>
+              </ProtectedRoute>cc
             }
           />
           <Route
