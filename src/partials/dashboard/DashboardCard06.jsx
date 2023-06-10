@@ -33,7 +33,7 @@ function DashboardCard06() {
   };
 
   return (
-    <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-gradient shadow-lg rounded-sm">
+    <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 pr-4 border-r-4 border-sky-500 bg-gradient shadow-lg rounded-sm">
       <header className="px-5 py-4 border-b border-slate-100">
         <h2 className="font-bold text-indigo-500">Startups by Sectors</h2>
       </header>

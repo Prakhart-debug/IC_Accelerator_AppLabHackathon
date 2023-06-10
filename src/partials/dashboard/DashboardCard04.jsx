@@ -40,7 +40,7 @@ function DashboardCard04() {
   };
 
   return (
-    <div className="flex flex-col col-span-full sm:col-span-6 bg-gradient shadow-lg rounded-sm">
+    <div className="flex flex-col col-span-full sm:col-span-6 bg-gradient shadow-lg rounded-md">
       <header className="px-5 py-4">
         <h2 className="font-bold text-indigo-500">INVEST A FEW MINUTES AND GET YOURSELF NOTICED</h2>
       </header>
