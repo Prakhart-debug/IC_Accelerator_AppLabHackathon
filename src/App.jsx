@@ -283,14 +283,6 @@ function App() {
               </ProtectedRoute>
             }
           />
-//           <Route
-//             path="/calendar"
-//             element={
-//               <ProtectedRoute>
-//                 <Calendar />
-//               </ProtectedRoute>
-//             }
-//           />
           <Route
             path="/settings/account"
             element={
