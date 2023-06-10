@@ -442,7 +442,7 @@ function App() {
             element={
               <ProtectedRoute>
                 <ButtonPage />
-              </ProtectedRoute>cc
+              </ProtectedRoute>
             }
           />
           <Route
