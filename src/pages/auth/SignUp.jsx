@@ -35,7 +35,7 @@ const SignUp = () => {
     setError("");
     try {
       await signUp(email, password);
-      navigate("/ssignin");
+      navigate("../dashboard");
     } catch (err) {
       setError(err.message);
     }
@@ -279,5 +279,3 @@ export default SignUp;
 //     )
 //   }
 // }
-
-// export default Signp
