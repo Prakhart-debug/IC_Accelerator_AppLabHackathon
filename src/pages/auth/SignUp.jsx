@@ -40,6 +40,15 @@ const SignUp = () => {
       setError(err.message);
     }
   };
+  const handleGoogleSignIn = async (e) => {
+    e.preventDefault();
+    try {
+      await googleSignIn();
+      navigate("../dashboard");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
@@ -187,7 +196,9 @@ const SignUp = () => {
                   </div>
                   <div className="flex flex-wrap -mx-3">
                     <div className="w-full px-3">
-                      <button className="btn px-0 text-white bg-red-600 hover:bg-red-700 w-full relative flex items-center">
+                      <button 
+                      onClick={handleGoogleSignIn}
+                      className="btn px-0 text-white bg-red-600 hover:bg-red-700 w-full relative flex items-center">
                         <svg
                           className="w-4 h-4 fill-current text-white opacity-75 flex-shrink-0 mx-4"
                           viewBox="0 0 16 16"
