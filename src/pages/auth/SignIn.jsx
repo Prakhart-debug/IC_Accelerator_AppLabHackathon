@@ -37,7 +37,7 @@ const SignIn = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/");
+      navigate("../dashboard");
       // const message = `Signed in with the ${email} address provided`;
     } catch (err) {
       setError(err.message);
@@ -48,7 +48,7 @@ const SignIn = () => {
     e.preventDefault();
     try {
       await googleSignIn();
-      navigate("/");
+      navigate("../dashboard");
     } catch (error) {
       console.log(error.message);
     }

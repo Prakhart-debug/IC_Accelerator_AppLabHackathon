@@ -92,7 +92,8 @@ function App() {
     <>
       <UserAuthContextProvider>
         <Routes>
-          <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/" element={<SignIn />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/analytics" element={<Analytics />} />
           <Route path="/dashboard/fintech" element={<Fintech />} />
           <Route path="/ecommerce/customers" element={<Customers />} />
